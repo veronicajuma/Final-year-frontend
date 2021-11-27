@@ -27,7 +27,7 @@ export default function rescued() {
                         </div>
                         <div className={styles.middle__line}></div>
                         <div className = {styles.personal__info}>
-                       <span> Rescued Child's details</span>
+                       <span> Rescued Child details</span>
                         <div className= {styles.data__entry}>
                             <label>Name</label>
                             <input type ="text"/>

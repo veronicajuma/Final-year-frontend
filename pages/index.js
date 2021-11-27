@@ -16,6 +16,7 @@ export default function Home() {
         <div className = {styles.logo}>
             <Image
             src = {missingchild}
+            alt = "compant logo"
             />
         </div>
         <div className = {styles.login__info}>
@@ -35,7 +36,7 @@ export default function Home() {
                 </button>
             </div>
             <div className = {styles.create__account}>
-              Do not have an account?<a href = "/register" className = {styles.account__creation}>Create one</a>
+              Do not have an account?<Link href = "/register" className = {styles.account__creation}>Create one</Link>
             </div>
         </div>
        </div>

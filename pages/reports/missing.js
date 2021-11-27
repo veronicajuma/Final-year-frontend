@@ -27,7 +27,7 @@ export default function missing() {
                         </div>
                         <div className={styles.middle__line}></div>
                         <div className = {styles.personal__info}>
-                       <span> Missing Child's details</span>
+                       <span> Missing Child details</span>
                         <div className= {styles.data__entry}>
                             <label>Name</label>
                             <input type ="text"/>
