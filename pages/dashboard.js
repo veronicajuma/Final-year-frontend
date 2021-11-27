@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser,faUsers, faFlag, faHome, faChartLine, faSearch, faPaperPlane, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 import missingchild from '../public/missingchild.png';
 import Image from 'next/image';
+import Link from 'next/link';
 export default function dashboard() {
     return (
         <div className = {styles.main__dashboard}>
@@ -16,25 +17,25 @@ export default function dashboard() {
           <ul>
             <li>
             <FontAwesomeIcon icon={faHome} className = {styles.homeicon}/>
-              <a href = "/home">Dashboard</a>
+              <Link href = "/home">Dashboard</Link>
             </li>
             <li>
             <FontAwesomeIcon icon={faFlag} className = {styles.homeicon}/>
               <a href ="#" >Report a case</a>
             </li>
-            <div class ="tenants__dropdown" id = "tenants__dropdown">
-                          <ul class = "tenant__dropdownlist">
-                          <li class = "tenants__list"><a href = "../reports/missing">Missing child</a></li>
-                          <li class = "tenants__list"><a href="../reports/rescued">Rescued child</a></li>
+            <div id = "tenants__dropdown">
+                          <ul c>
+                          <li ><Link href = "../reports/missing">Missing child</Link></li>
+                          <li ><Link href="../reports/rescued">Rescued child</Link></li>
                          </ul>
                         </div>
             <li>
             <FontAwesomeIcon icon={faUsers} className = {styles.homeicon}/>
-              <a href = "/missingchildren">Missing children</a>
+              <Link href = "/missingchildren">Missing children</Link>
             </li>
             <li>
             <FontAwesomeIcon icon={faChartLine} className = {styles.homeicon}/>
-              <a href = "#">County reports</a>
+              <Link href = "#">County reports</Link>
             </li>
             </ul>
             <div className = {styles.accounts}>
