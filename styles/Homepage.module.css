@@ -1,0 +1,137 @@
+.main__styles{
+    margin-left: 200px;
+    background-color: #F5F5F5;
+}
+.general__info{
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 30px;
+    color: #F15928;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*===
+case totals information
+===*/
+.dashboard__summary{
+display:flex;
+padding-left: 30px;
+}
+.dashboard__numbers{
+  display: flex;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width:18vw;
+  padding-top:25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+.dashboard__numbers span:nth-child(1){
+   font-weight: 700;
+   font-size: 24px;
+}
+.dashboard__numbers:nth-child(3){
+  background-color:rgb(243, 13, 13);  
+  color:white;
+}
+.dashboard__numbers:nth-child(2){
+    background-color:#008CFF;  
+    color:white;
+  }
+.dashboard__text{
+    display: flex;
+    flex-direction: column;
+}
+.dashboard__numbers .dashboard__text span:nth-child(1), .dashboard__numbers .dashboard__text span:nth-child(2){
+    font-weight: 400;
+    font-size: 16px;
+    color:black;
+}
+.dashboard__numbers:nth-child(2) .dashboard__text span, .dashboard__numbers:nth-child(3) .dashboard__text span{
+    color:white;
+}
+.bulletin__board{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+  background-color: white;
+  width:22%;
+  height: 450px;
+  border-radius: 5px;
+  margin-top: -8%;
+  margin-left: 73.5%;
+}
+/*==
+Bar chart and pie chart
+==*/
+.bar__statistics{
+  display:flex;
+  padding-left: 30px;
+  margin-top: -28.7%;
+}
+.chart__information{
+  background-color: white;
+  padding:20px;
+  width:46%;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+  border-radius: 3px; 
+  max-height: 400px;
+  margin-right: 29px;
+}
+.pie__information{
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  width:21.7%;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+  border-radius: 3px; 
+  max-height: fit-content;
+}
+/*==
+Line chart and social media stats
+==*/
+.line__statistics{
+  display: flex;
+  padding-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.gender__information{
+  width:70.5%;
+  background-color: white;
+  padding:20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+  border-radius: 3px; 
+  margin-right: 30px;
+}
+.twitter__information{
+  background-color: white;
+  padding:20px;
+  width:22.3%;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+  border-radius: 3px; 
+  height: 450px;
+  margin-right: 29px;
+}
+/*==
+Footer information
+==*/
+.footer{
+  background-color: #E5E5E5;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer span:nth-child(1){
+  padding-bottom: 5px;
+}

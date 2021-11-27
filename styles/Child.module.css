@@ -1,0 +1,12 @@
+.summary{
+    margin-left: 200px;
+    background-color: #F5F5F5;
+}
+.child__header{
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 30px;
+    color: #F15928;
+    font-size: 18px;
+    font-weight: 600;
+}
