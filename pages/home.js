@@ -1,10 +1,12 @@
 import Dashboard from "./dashboard";
+import Image from 'next/image';
 import style from "../styles/Homepage.module.css";
 import Casebarchart from "./casebarchart.js";
 import Countypie from "./countypie";
 import Gender from "./gender";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import faTwitter from '@fortawesome/free-solid-svg-icons';
+import missing from '../public/msk.jpg';
 export default function home() {
     return (
         <div>
@@ -40,6 +42,7 @@ export default function home() {
                  </div>
                  <div className = {style.bulletin__board}>
                           <p>Bulletin Board</p>
+                          <Image src = {missing} alt = "More details"/>
                           </div>
                  <div className = {style.bar__statistics}>
                    <div className = {style.chart__information}>

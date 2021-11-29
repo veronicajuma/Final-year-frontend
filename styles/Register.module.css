@@ -1,0 +1,57 @@
+.registration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration__page{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+    background-color: white;
+    width:40%;
+    padding:30px;
+    height: 550px;
+    border-radius: 5px;
+    margin-left: 30px;
+    align-items: center;
+}
+.registration__page p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.registration__page .personal__information{
+    display: flex;
+    flex-direction: column;
+}
+.personal__information label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.personal__information input{
+    padding:10px;
+    width:250px;
+    outline:none;
+    border-radius: 3px;
+    border: 1px solid #bbb8b8;
+}
+
+.registration__submit{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration__submit button{
+    width:100%;
+    padding:10px;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #F15928;
+    border:none;
+    color:white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+}

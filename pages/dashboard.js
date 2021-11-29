@@ -1,9 +1,21 @@
 import styles from '../styles/Dashboard.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser,faUsers, faFlag, faHome, faChartLine, faSearch, faPaperPlane, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { faUser,faUsers, faFlag, faHome, faChartLine, faSearch, faPaperPlane, faSignOutAlt, faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import missingchild from '../public/missingchild.png';
 import Image from 'next/image';
 import Link from 'next/link';
+const onArrowClick = () => {
+  document.getElementById('downarrow').style.display = "flex";
+  document.getElementById('rightarrow').style.display = "none";
+  document.getElementById('missing__dropdown').style.display = "flex";
+  
+}
+const onDownArrowClick = () => {
+  document.getElementById('downarrow').style.display = "none";
+  document.getElementById('rightarrow').style.display = "flex";
+  document.getElementById('missing__dropdown').style.display = "none";
+  
+}
 export default function dashboard() {
     return (
         <div className = {styles.main__dashboard}>
@@ -21,10 +33,10 @@ export default function dashboard() {
             </li>
             <li>
             <FontAwesomeIcon icon={faFlag} className = {styles.homeicon}/>
-              <a href ="#" >Report a case</a>
+              <a href ="#" >Report a case</a> <FontAwesomeIcon icon={faChevronRight} className = {styles.arrowicon} id="rightarrow" onClick = {onArrowClick}/><FontAwesomeIcon icon={faChevronDown} className = {styles.downarrowicon} id = "downarrow" onClick = {onDownArrowClick}/>
             </li>
-            <div id = "tenants__dropdown">
-                          <ul c>
+            <div className= {styles.missing__dropdown} id = "missing__dropdown">
+                          <ul>
                           <li ><Link href = "../reports/missing">Missing child</Link></li>
                           <li ><Link href="../reports/rescued">Rescued child</Link></li>
                          </ul>

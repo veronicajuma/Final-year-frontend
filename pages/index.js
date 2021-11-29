@@ -16,7 +16,7 @@ export default function Home() {
         <div className = {styles.logo}>
             <Image
             src = {missingchild}
-            alt = "compant logo"
+            alt = "company logo"
             />
         </div>
         <div className = {styles.login__info}>

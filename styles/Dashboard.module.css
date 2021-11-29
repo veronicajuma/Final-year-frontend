@@ -35,6 +35,28 @@
   .accounts span{
       font-weight: 600;
   }
+  .arrowicon{
+    display:flex;
+    color: #F15928;
+    margin-top: -13px;
+    margin-left:150px;
+    width:20px;
+    height:12px;
+    cursor: pointer;
+  }
+  .downarrowicon{
+    color: #F15928;
+    margin-left:150px;
+    margin-top: -13px;
+    width:20px;
+    height:12px;
+    display:none;
+    cursor:pointer;
+  }
+  .missing__dropdown{
+    display: none;
+    margin-left: 18px;
+  }
   /*===
   Header information
   ==*/
