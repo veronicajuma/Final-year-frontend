@@ -20,6 +20,11 @@ export default function register() {
 	<input id="email" type="email" name="email"/>
     </div>
     <div  className = {styles.personal__information}>
+    <label>Gender</label>
+	<input id="gender" type="text" name="gender"/>
+    </div>
+    
+    <div  className = {styles.personal__information}>
     <label>Password</label>
 	<input id="password" type="password" name="password"/>
     </div>
